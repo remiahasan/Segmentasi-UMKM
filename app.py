@@ -1,14 +1,11 @@
 import streamlit as st
-import pickle
 import numpy as np
 import re
+import joblib
 
 
-with open("cluster_model.pkl", "rb") as f:
-    model = pickle.load(f)
-
-with open("scaler.pkl", "rb") as f:
-    scaler = pickle.load(f)
+model = joblib.load("cluster_model.pkl")
+scaler = joblib.load("scaler.pkl")
 
 st.set_page_config(
     page_title="Segmentasi UMKM Berdasarkan Perilaku Penjualan",
