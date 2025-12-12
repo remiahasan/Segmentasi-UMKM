@@ -4,10 +4,10 @@ import numpy as np
 import re
 
 
-with open("D:\program vscode\Pemetaan Segmentasi UMKM Berdasarkan Perilaku Penjualan Menggunakan Metode Clustering\cluster_model.pkl", "rb") as f:
+with open("cluster_model.pkl", "rb") as f:
     model = pickle.load(f)
 
-with open("D:\program vscode\Pemetaan Segmentasi UMKM Berdasarkan Perilaku Penjualan Menggunakan Metode Clustering\scaler.pkl", "rb") as f:
+with open("scaler.pkl", "rb") as f:
     scaler = pickle.load(f)
 
 st.set_page_config(
